@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.main-container{
+.container{
     min-height: 100vh;
     width: 100%;
     background-color: #485461;
@@ -29,4 +29,64 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
+}
+
+.logo{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 4rem;
+}
+
+.logo span{
+    font-weight: 300;   
+}
+
+.hambuger-menu{
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bar{
+    width: 1.9rem;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: #eee;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bar::before, .bar::after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #eee ;
+    transition: 0.5s;
+}
+
+.bar::before{
+    transform: translateY(-9px);
+}
+
+.bar::after{
+    transform: translateY(9px);
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+header{
+    
 }
