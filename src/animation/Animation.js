@@ -1,4 +1,5 @@
 import React from "react";
+import "./Animation.css"
 
 const Animation = () => {
   return (
@@ -7,9 +8,13 @@ const Animation = () => {
         <div className="navbar">
           <div className="menu">
             <h3 className="logo">
-              Brand<span>Name</span>
+              Sanjeev Gwachha
             </h3>
-            <div className="hambuger-menu"></div>
+            <div className="hambuger-menu">
+                <div className="bar">
+
+                </div>
+            </div>
           </div>
         </div>
       </div>
