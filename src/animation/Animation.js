@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "./Animation.css";
 
 const Animation = () => {
+  const hambuger_menu = document.querySelector(".hambuger-menu");
+  const container = document.querySelector(".container");
 
-    const hambuger_menu = document.querySelector(".hambuger-menu");
-    const container = document.querySelector(".container");
-
-    const handleButton = ("click", () => {
-        container.classList.toggle("active");
-    })
+  const handleButton =
+    ("click",
+    () => {
+      container.classList.toggle("active");
+    });
 
   return (
     <>
@@ -40,9 +41,27 @@ const Animation = () => {
               </div>
             </header>
           </div>
+          <div className="links">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About me</a>
+              </li>
+              <li>
+                <a href="#">Contact me</a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Portfolio</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div>hello</div>
     </>
   );
 };
