@@ -10,6 +10,7 @@
   background-color: #485461;
   background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
   overflow-x: hidden;
+  transform-style: preserve-3d;
 }
 
 .navbar {
@@ -87,6 +88,9 @@
   z-index: 5;
   background-color: #fff;
   overflow: hidden;
+  transform-origin: left;
+  transform-style: preserve-3d;
+  transition: 1s;
 }
 
 header {
@@ -133,4 +137,32 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
+}
+
+.container.active .bar {
+  transform: rotate(360deg);
+  background-color: transparent;
+}
+
+.container.active .bar::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.container.active .bar::after {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.container.active .main {
+  cursor: pointer;
+  animation: main-animation 0.5s ease;
+  transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+  }
 }

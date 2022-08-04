@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Animation.css";
 
 const Animation = () => {
+
+    const hambuger_menu = document.querySelector(".hambuger-menu");
+    const container = document.querySelector(".container");
+
+    const handleButton = ("click", () => {
+        container.classList.toggle("active");
+    })
+
   return (
     <>
       <div className="container">
@@ -10,7 +18,7 @@ const Animation = () => {
             <h3 className="logo">
               Brand<span>Name</span>
             </h3>
-            <div className="hambuger-menu">
+            <div className="hambuger-menu" onClick={handleButton}>
               <div className="bar"></div>
             </div>
           </div>
@@ -34,6 +42,7 @@ const Animation = () => {
           </div>
         </div>
       </div>
+      <div>hello</div>
     </>
   );
 };
