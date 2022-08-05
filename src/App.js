@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <Animation />
-        <About />
+        {/* <About /> */}
       </div>
     </>
   );

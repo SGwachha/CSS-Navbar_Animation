@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+}
+
 .main {
   display: flex;
   align-items: center;
@@ -92,11 +96,4 @@
   background-repeat: no-repeat;
   transform-origin: center bottom;
   transform: translateZ(150px);
-}
-
-.about{
-    display: flex;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
 }
