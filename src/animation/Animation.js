@@ -41,6 +41,8 @@ const Animation = () => {
               </div>
             </header>
           </div>
+          <div className="shadow one"></div>
+          <div className="shadow two"></div>
           <div className="links">
             <ul>
               <li>
