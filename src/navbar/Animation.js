@@ -60,6 +60,9 @@ const Animation = () => {
               <li>
                 <a href="#">Portfolio</a>
               </li>
+              <li>
+                <a href="#">Help</a>
+              </li>
             </ul>
           </div>
         </div>
