@@ -1,11 +1,13 @@
+import About from "./about/About";
 import "./App.css";
-import Animation from "./animation/Animation";
+import Animation from "./navbar/Animation";
 
 function App() {
   return (
     <>
       <div>
-        <Animation />
+        {/* <Animation /> */}
+        <About />
       </div>
     </>
   );

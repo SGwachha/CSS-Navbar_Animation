@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  min-height: 100vh;
+  perspective: 580px;
+  transition: all 0.5s;
+  background-image: linear-gradient(135deg, #485461 0%, #28313b 74%);
+}
+
+.wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transition: all 10s;
+  transform: rotateX(0) rotateY(0) rotateZ(0);
+  transform-style: preserve-3d;
+}
+
+.wrapper:hover {
+  transform: rotateX(0deg) rotateY(90deg) rotateZ(310deg);
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face:nth-child(1) {
+  background-image: url("../image/pic1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center left;
+  transform: rotateY(90deg) translateX(-150px);
+}
+
+.face:nth-child(2) {
+  background-image: url("../image/pic2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center top;
+  transform: rotateY(90deg) translateZ(150px);
+}
+
+.face:nth-child(3) {
+  background-image: url("../image/pic3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center top;
+  transform: rotateX(-90deg) translateY(-150px);
+}
+
+.face:nth-child(4) {
+  background-image: url("../image/pic4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center bottom;
+  transform: rotateX(90deg) translateY(150px);
+}
+
+.face:nth-child(5) {
+  background-image: url("../image/pic5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center bottom;
+  transform: translateZ(-150px);
+}
+
+.face:nth-child(6) {
+  background-image: url("../image/pic6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: center bottom;
+  transform: translateZ(150px);
+}
