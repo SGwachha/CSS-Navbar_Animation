@@ -5,9 +5,9 @@
 }
 
 .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   perspective: 580px;
   transition: all 0.5s;
@@ -92,4 +92,11 @@
   background-repeat: no-repeat;
   transform-origin: center bottom;
   transform: translateZ(150px);
+}
+
+.about{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
 }
